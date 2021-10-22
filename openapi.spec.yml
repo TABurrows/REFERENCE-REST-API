@@ -1,0 +1,52 @@
+openapi: "3.0.2"
+info:
+  title: Simple Prototype API
+  version: "1.0"
+servers:
+  - url: http://example.com/api/v1
+paths:
+  /status:
+    get:
+      responses:
+        200:
+          description: Request successful
+  /countries:
+    get:
+      responses:
+        200:
+          description: Request successful
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Countries"
+components:
+  schemas:
+    Countries:
+      type: array
+      items:
+        $ref: "#/components/schemas/Country"
+    Country:
+      type: object
+      properties:
+        name:
+          type: string
+        alpha2:
+          type: string
+        alpha3:
+          type: string
+        countryCode:
+          type: string
+        iso3166pt2:
+          type: string
+        region:
+          type: string
+        subRegion:
+          type: string
+        intermediateRegion:
+          type: string
+        regionCode:
+          type: string
+        subRegionCode:
+          type: string
+        intermediateRegionCode:
+          type: string

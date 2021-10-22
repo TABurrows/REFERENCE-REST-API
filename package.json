@@ -1,0 +1,38 @@
+{
+  "name": "reference-rest-api",
+  "version": "1.0.0",
+  "description": "A simple prototype serverless node.js API server running on Google Cloud Platform.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/taburrows/reference-rest-api.git"
+  },
+  "keywords": [
+    "REST",
+    "API"
+  ],
+  "author": "taburrows",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/taburrows/reference-rest-api/issues"
+  },
+  "homepage": "https://github.com/taburrows/reference-rest-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.11",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": "^7.0.4",
+    "jest": "^27.3.1",
+    "lint-staged": "^11.2.3",
+    "prettier": "^2.4.1",
+    "supertest": "^6.1.6"
+  }
+}
